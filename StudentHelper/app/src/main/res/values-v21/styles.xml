@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="android:Theme.Material.Light">
+    </style>
+
+    <style name="group_section_linearLayout">
+
+            <item name="android:layout_width">match_parent</item>
+            <item name="android:layout_height">wrap_content</item>
+            <item name="android:padding">5dp</item>
+            <item name="android:layout_margin">5dp</item>
+            <item name="android:orientation">vertical</item>
+            <item name="android:background">#666A73</item>
+
+    </style>
+
+    <style name="standard_block">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#D9D1C7</item>
+
+    </style>
+
+    <style name="standard_block_segmentTitle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#2D333D</item>
+
+    </style>
+
+
+    <style name="group_section_title">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:padding">5dp</item>
+        <item name="android:textColor">#D9D1C7</item>
+
+    </style>
+
+
+
+    <style name="group_fragmentStyle">
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#2D333D</item>
+
+    </style>
+
+    <style name="standard_block_button">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#2D333D</item>
+    </style>
+
+    <style name="AppTheme.Custom" parent="android:Theme.Material.Light">
+        <item name="android:windowBackground">@drawable/paper_fibers_background</item>
+        <!--
+        <item name="android:textColor">@color/mega_light_blue</item>
+        <item name="android:colorButtonNormal">@color/light_blue</item>
+        -->
+        <item name="android:colorPrimary">@color/light_blue</item>
+        <item name="android:buttonStyle">@style/customButtonStyle</item>
+
+    </style>
+
+    <style name="actionBarBackground" parent="android:Theme.Material.Light.DarkActionBar">
+        <item name="android:background">#FFCEAA</item>
+
+    </style>
+
+    <style name="customButtonStyle" parent="android:Widget.Material.Light.Button">
+        <item name="android:background">@color/light_blue</item>
+        <item name="android:textColor">@color/mega_light_blue</item>
+        <item name="android:height">36dp</item>
+        <item name="android:minWidth">88dp</item>
+        <item name="android:padding">6dp</item>
+
+
+    </style>
+
+
+
+
+
+</resources>

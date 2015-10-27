@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/group_fragmentStyle"
+    android:id="@+id/group_singleGroup_fragment">
+
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <TextView
+            android:text="Group ID: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="standard_block_segmentTitle"/>
+        <TextView
+            android:id="@+id/group_id"
+            style="@style/standard_block" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <TextView
+            android:text="Group Name"
+            style="@style/standard_block_segmentTitle" />
+        <EditText
+            android:id="@+id/group_name"
+            style="@style/standard_block"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <TextView
+            android:text="Class"
+            style="@style/standard_block_segmentTitle" />
+        <EditText
+            android:id="@+id/group_className"
+            style="@style/standard_block"
+            />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/group_singleGroup_archiveButton"
+        android:text="Archive Group"
+        android:visibility="invisible"
+        android:onClick="archiveSingleGroup"
+        style="@style/standard_block_button"
+        />
+    <Button
+        android:id="@+id/group_singleGroup_restoreButton"
+        android:text="Restore Group"
+        android:visibility="invisible"
+        android:onClick="restoreSingleGroup"
+        style="@style/standard_block_button"
+        />
+
+
+    <Button
+        android:id="@+id/save_group"
+        android:text="Save"
+        style="@style/standard_block_button"
+        />
+
+</LinearLayout>

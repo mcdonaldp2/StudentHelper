@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/group_fragmentStyle"
+    android:id="@+id/group_new_form_fragment">
+
+
+    <TextView
+        style="@style/group_section_title"
+        android:text="Create a new group"/>
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <EditText
+            style="@style/standard_block"
+            android:id="@+id/group_new_groupName"
+            android:hint="Group Name"/>
+
+        <EditText
+            style="@style/standard_block"
+            android:id="@+id/group_new_groupClass"
+            android:hint="Class"/>
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+    <TextView
+        style="@style/standard_block_segmentTitle"
+        android:text="Project Due Date"/>
+
+
+        <DatePicker
+            android:datePickerMode="spinner"
+            android:id="@+id/group_new_datePicker"
+            style="@style/standard_block"></DatePicker>
+</LinearLayout>
+
+    <Button
+        style="@style/standard_block_button"
+        android:onClick="createGroup"
+        android:id="@+id/group_create_new_button"
+        android:text="Create Group" />
+
+
+</LinearLayout>

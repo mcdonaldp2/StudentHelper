@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.helper.groupa.studenthelper.Calendar.ScheduleUpdate">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/updateNameInput"
+        android:width="200dp"
+        android:height="40dp"
+        android:editable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Class Name:"
+        android:id="@+id/classNameLabel"
+        android:textColor="#000000"
+        android:textSize="@dimen/abc_text_size_large_material"
+        android:layout_alignBaseline="@+id/updateNameInput"
+        android:layout_alignBottom="@+id/updateNameInput"
+        android:layout_alignParentStart="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Monday"
+        android:id="@+id/mondayCheckBox"
+        android:layout_marginTop="21dp"
+        android:layout_below="@+id/updateNameInput"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tuesday"
+        android:id="@+id/tuesdayCheckBox"
+        android:layout_alignTop="@+id/mondayCheckBox"
+        android:layout_toEndOf="@+id/classNameLabel" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wednesday"
+        android:id="@+id/wednesdayCheckBox"
+        android:layout_alignTop="@+id/tuesdayCheckBox"
+        android:layout_alignEnd="@+id/updateNameInput"
+        android:layout_marginEnd="19dp" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thursday"
+        android:id="@+id/thursdayCheckBox"
+        android:layout_below="@+id/mondayCheckBox"
+        android:layout_toStartOf="@+id/updateNameInput" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Friday"
+        android:id="@+id/fridayCheckBox"
+        android:layout_alignTop="@+id/thursdayCheckBox"
+        android:layout_toEndOf="@+id/tuesdayCheckBox" />
+
+    <TimePicker
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scheduleTimePicker"
+        android:timePickerMode="spinner"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Class Start"
+        android:id="@+id/updateStartTimeButton"
+        android:layout_below="@+id/scheduleTimePicker"
+        android:layout_alignStart="@+id/mondayCheckBox" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Class End"
+        android:id="@+id/updateEndTimeButton"
+        android:layout_alignBottom="@+id/updateStartTimeButton"
+        android:layout_alignEnd="@+id/wednesdayCheckBox" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/classStartTextField"
+        android:layout_below="@+id/updateStartTimeButton"
+        android:layout_alignStart="@+id/scheduleTimePicker" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/classEndTextField"
+        android:layout_below="@+id/updateEndTimeButton"
+        android:layout_alignEnd="@+id/updateEndTimeButton" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update Class"
+        android:id="@+id/updateClassButton"
+        android:width="200dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/fridayCheckBox" />
+
+</RelativeLayout>

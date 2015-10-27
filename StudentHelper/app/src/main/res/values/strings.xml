@@ -1,0 +1,109 @@
+<resources>
+    <string name="app_name">Student Helper</string>
+
+    <!--home page string resources-->
+    <string name="action_settings">Settings</string>
+    <string name="agenda">Agenda</string>
+    <string name="schedule">schedule</string>
+    <string name="gpaCalc">GPA Calculator</string>
+    <string name="gradebook">GradeBook</string>
+    <string name="group">Group</string>
+    <!--Agenda string resources-->
+    <string name="title_activity_agenda">Agenda</string>
+    <string name="addAssignment">Add Assignment</string>
+    <string name="title_activity_add_page">Add an Assignment</string>
+    <string name="finish">Finish</string>
+    <string name="viewPastAssignments">Past Assignments</string>
+    <!--Add assignment string resources-->
+    <string name="class_label">Class:</string>
+    <string name="assignment_label">Assignment:</string>
+    <string name="dueDate_label">Set Due Date:</string>
+    <!--Edit Assignment String Resources-->
+    <string name="title_activity_edit_agenda">Edit An Assignment</string>
+    <string name="finishEdit">Finish Edit</string>
+    <string name="delete_dialog_yes">Yes</string>
+    <string name="delete_dialog_no">No</string>
+    <!--Past Assignments String Resources-->
+    <string name="title_activity_past_assignments_agenda">Past Assignments</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_reassign">Reassign</string>
+    <string name="cancel">cancel</string>
+    <!--END OF AGENDA COMPONENT RESOURCES -->
+
+
+    <string name="title_activity_gpa">GPAActivity</string>
+    <string name="title_activity_testactivity">testactivity</string>
+    <string name="title_activity_add_semester_gpa">AddSemesterGPAActivity</string>
+    <string name="title_activity_add_course_gpa">addCourseGPAActivity</string>
+ <string-array name="gradeSpinner">
+        <item>Grade</item>
+        <item>A</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B</item>
+        <item>B-</item>
+        <item>C+</item>
+        <item>C</item>
+        <item>C-</item>
+        <item>D+</item>
+        <item>D</item>
+        <item>D-</item>
+        <item>F</item>
+    </string-array>
+
+    <string-array name="creditSpinner">
+        <item>Credits</item>
+        <item>5</item>
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string name="title_activity_schedule_main">ScheduleMainActivity</string>
+    <string name="action_today">Today</string>
+    <string name="action_day_view">Day view</string>
+    <string name="action_three_day_view">3 day view</string>
+    <string name="action_week_view">Week view</string>
+
+    <string name="title_activity_schedule_add_class">ScheduleAddClass</string>
+    <string name="ScheduleMainLabel">Week at a Glance</string>
+
+    <string name="group_dashboard_title">Groups</string>
+        <string name="group_dashboard_test">Active Groups</string>
+        <string name="group_menu_newGroup">New Group</string>
+        <string name="group_number_prompt"></string>
+
+    <string name="group_user_info_username">Username</string>
+    <string-array name="group_spinner_post_types">
+        <item>Message</item>
+        <item>Task Suggestion</item>
+        <item>Share Link</item>
+        <item>Suggest Meet Up</item>
+    </string-array>
+
+    <string name="ScheduleAddLabel">Add Class to Schedule</string>
+    <string name="title_activity_list_view_add_semester_gpa">ListViewAddSemesterGPAActivity</string>
+    <string name="title_activity_course_semester_gpa">courseSemesterGPAActivity</string>
+    <string name="title_activity_set_gpaor_classes">setGPAorClasses</string>
+    <string name="title_activity_set_gpa">setGPAActivity</string>ing>
+
+    <string name="title_activity_class_syllabus">Class Syllabus</string>
+    <string name="title_activity_class_grade">Class Grade</string>
+    <string name="title_activity_schedule_details">ScheduleDetails</string>
+    <string name="title_activity_edit_semester_gpa">EditSemesterGPAActivity</string>
+    <string name="title_activity_edit_course_semester_gpa">EditCourseSemesterGPAActivity</string>
+
+    <string name = "gb_title_activity_gb_class">Gradebook: Classes</string>
+    <string name = "gb_title_activity_gb_syllabus">Gradebook: Syllabus</string>
+    <string name = "gb_title_activity_gb_grade">Gradebook: Grades</string>
+
+    <string name = "gb_activity_gb_class_button">ADD CLASS</string>
+    <string name = "gb_activity_gb_syllabus_button">ADD TO SYLLABUS</string>
+    <string name = "gb_activity_gb_grade_button">ADD GRADE</string>
+
+    <string name = "gb_extra_credit">Extra Credit?</string>
+    <string name = "gb_home_screen">Home Screen</string>
+
+
+
+</resources>

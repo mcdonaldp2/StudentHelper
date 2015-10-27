@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/group_fragmentStyle"
+    >
+
+    <TextView
+        style="@style/group_section_title"
+        android:text="New Post"
+        />
+
+    <LinearLayout
+        style="@style/group_section_linearLayout"
+        >
+
+        <Spinner
+            android:id="@+id/group_post_type_spinner"
+            style="@style/standard_block" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:id="@+id/group_post_datePicker"
+            style="@style/group_section_linearLayout"
+            android:visibility="invisible"
+            >
+            <TextView
+                style="@style/standard_block_segmentTitle"
+                android:text="Due Date:" />
+            <DatePicker
+                android:datePickerMode="spinner"
+                style="@style/standard_block">
+
+            </DatePicker>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/group_post_description"
+            style="@style/group_section_linearLayout"
+            android:layout_alignBottom="@+id/group_post_datePicker"
+            android:visibility="invisible"
+            >
+            <TextView
+                style="@style/standard_block_segmentTitle"
+                android:text="Description:" />
+            <EditText
+                style="@style/standard_block"
+                android:gravity="top"
+                />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_post_message_heading"
+            style="@style/group_section_linearLayout"
+            android:visibility="invisible"
+            >
+                <TextView
+                style="@style/standard_block_segmentTitle"
+                android:text="Heading" />
+
+                <EditText
+                style="@style/standard_block"
+                android:gravity="top"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_post_message_content"
+            style="@style/group_section_linearLayout"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/group_post_message_heading">
+                <TextView
+                    style="@style/standard_block_segmentTitle"
+                    android:text="Message" />
+
+                <EditText
+                    style="@style/standard_block"
+                    android:layout_height="120dp"
+                    android:gravity="top"
+                    />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/group_post_link"
+            style="@style/group_section_linearLayout"
+            android:visibility="invisible"
+            >
+            <TextView
+                style="@style/standard_block_segmentTitle"
+                android:text="Link:" />
+            <EditText
+                style="@style/standard_block"
+                android:gravity="top"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/group_post_location"
+            style="@style/group_section_linearLayout"
+            android:visibility="invisible"
+            android:layout_alignBottom="@+id/group_post_datePicker"
+            >
+            <TextView
+                style="@style/standard_block_segmentTitle"
+                android:text="Location:" />
+
+            <EditText
+                style="@style/standard_block"
+                android:gravity="top"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        style="@style/standard_block"
+        android:gravity="right"
+        android:layout_margin="5dp"
+        android:padding="5dp">
+
+        <Button
+            style="@style/standard_block_button"
+            android:text="Post" />
+    </LinearLayout>
+
+
+
+</LinearLayout>

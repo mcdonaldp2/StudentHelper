@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.helper.groupa.studenthelper.addCourseGPAActivity">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/courseTitleEditText"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:maxLength="25"
+        android:hint="Class name" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/gradeSpinnerView"
+        android:spinnerMode="dropdown"
+        android:entries="@array/gradeSpinner"
+        android:layout_below="@+id/courseTitleEditText"
+        android:layout_toEndOf="@+id/courseTitleEditText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Grade:"
+        android:id="@+id/gradeTextView"
+        android:layout_alignTop="@+id/gradeSpinnerView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Credit Hours:"
+        android:id="@+id/creditHoursTextView"
+        android:layout_below="@+id/gradeSpinnerView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="62dp" />
+
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/creditHoursSpinner"
+        android:layout_alignTop="@+id/creditHoursTextView"
+        android:layout_alignEnd="@+id/gradeSpinnerView"
+        android:layout_toEndOf="@+id/creditHoursTextView"
+        android:entries="@array/creditSpinner"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Save"
+        android:id="@+id/courseSaveButton"
+        android:layout_below="@+id/creditHoursSpinner"
+        android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

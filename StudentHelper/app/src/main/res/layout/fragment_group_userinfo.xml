@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/group_fragmentStyle"
+    android:id="@+id/userInfoFragment">
+
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <TextView
+            android:text="User ID: "
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="standard_block_segmentTitle"/>
+        <TextView
+            android:id="@+id/user_info_id"
+            style="@style/standard_block" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <TextView
+            android:text="Phone Number: "
+            style="@style/standard_block_segmentTitle" />
+        <TextView
+            android:id="@+id/user_info_phone"
+            style="@style/standard_block" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <TextView
+            android:text="@string/group_user_info_username"
+            style="@style/standard_block_segmentTitle" />
+        <EditText
+            android:tag="userInfo_userName_field"
+            android:id="@+id/user_info_username"
+            style="@style/standard_block"
+            android:hint="No username set"
+            />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/save_user_info_button"
+        android:text="Save"
+        style="@style/standard_block_button"
+        android:onClick="updateUserName"
+        />
+
+</LinearLayout>

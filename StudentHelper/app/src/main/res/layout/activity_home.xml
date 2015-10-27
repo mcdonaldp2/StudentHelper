@@ -1,0 +1,61 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".HomeActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/agenda"
+        android:id="@+id/agenda"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/gpaCalc"
+        android:layout_alignEnd="@+id/scheduleButton"
+        android:onClick="viewAgenda"
+        />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/schedule"
+        android:id="@+id/scheduleButton"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/agenda"
+        android:layout_alignEnd="@+id/gpaCalc"
+        android:layout_alignStart="@+id/gpaCalc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gpaCalc"
+        android:id="@+id/gpaCalc"
+        android:layout_marginTop="45dp"
+	    android:layout_below="@+id/scheduleButton"
+        android:layout_centerHorizontal="true"
+        android:onClick="gpaButtonClick"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/gradebook"
+        android:id="@+id/gradebook"
+        android:layout_below="@+id/gpaCalc"
+        android:layout_alignStart="@+id/gpaCalc"
+        android:layout_marginTop="45dp"
+        android:layout_alignEnd="@+id/gpaCalc"
+        android:layout_alignParentEnd="false"
+        android:onClick="gradebookPage"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/group"
+        android:onClick="openGroups"
+        android:id="@+id/group"
+        android:layout_marginTop="45dp"
+        android:layout_below="@+id/gradebook"
+        android:layout_alignStart="@+id/gpaCalc"
+        android:layout_alignEnd="@+id/gpaCalc" />
+
+</RelativeLayout>

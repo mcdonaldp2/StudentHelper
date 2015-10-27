@@ -1,0 +1,35 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/groupMenu"
+    tools:context="com.helper.groupa.studenthelper.GroupMain">
+
+    <item
+        android:id="@+id/group_view_user"
+        android:title="User Info"
+
+        />
+
+    <item
+        android:id="@+id/group_view_active"
+        android:title="Active"
+
+        />
+    <item
+        android:id="@+id/group_find_button"
+        android:title="Find"
+
+        />
+    <item
+        android:id="@+id/group_create_new_button"
+        android:title="Create"
+
+    />
+
+    <item
+        android:id="@+id/group_view_archive"
+        android:title="Archive"
+
+        />
+
+</menu>

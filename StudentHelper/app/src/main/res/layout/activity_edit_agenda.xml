@@ -1,0 +1,77 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/edit_agenda_scroll">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:orientation="vertical"
+        android:id= "@+id/edit_agenda_layout"
+        tools:context="com.helper.groupa.studenthelper.addPageActivity">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/class_label"
+            android:id="@+id/edit_class_label"
+            />
+
+        <EditText
+            android:layout_width="142dp"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:id="@+id/edit_class_editText"
+            android:labelFor="@string/class_label"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/assignment_label"
+            android:id="@+id/edit_assignment_label" />
+
+        <EditText
+            android:layout_width="134dp"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:id="@+id/edit_assignment_editText"
+            android:label=""
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/dueDate_label"
+            android:id="@+id/edit_dueDate_Lab"
+            />
+
+        <DatePicker
+            android:id="@+id/agenda_edit_datePicker"
+            android:layout_width="323dp"
+            android:layout_height="103dp"
+            android:calendarViewShown="false"
+            android:datePickerMode="spinner"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/finishEdit"
+            android:id="@+id/action_edit_finish"
+            android:layout_marginTop="54dp"
+            android:layout_gravity="center_horizontal"
+            android:onClick="finishEditAssignment"/>
+
+
+    </LinearLayout>
+</ScrollView>

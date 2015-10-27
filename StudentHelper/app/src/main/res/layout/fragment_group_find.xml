@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/group_fragmentStyle">
+
+    <TextView
+        style="@style/group_section_title"
+        android:text="Find an existing group"/>
+
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <EditText
+            style="@style/standard_block"
+            android:id="@+id/group_find_name"
+            android:hint="Group Name" />
+        <EditText
+            style="@style/standard_block"
+            android:id="@+id/group_find_class"
+            android:hint="Class" />
+
+    </LinearLayout>
+
+    <TextView
+        style="@style/group_section_title"
+        android:text="or"
+        android:layout_gravity="center"
+        />
+    <LinearLayout
+        style="@style/group_section_linearLayout">
+
+        <EditText
+            style="@style/standard_block"
+            android:id="@+id/group_find_id"
+            android:hint="Group ID" />
+
+    </LinearLayout>
+
+
+    <Button
+        style="@style/standard_block_button"
+        android:text="Find Group"
+        android:onClick="findGroup"/>
+
+</LinearLayout>
