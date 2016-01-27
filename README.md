@@ -1,6 +1,8 @@
 # Group_A-app_project_355
 app_project_355 created for Group_A
 
+I, Paul McDonald, Created the agenda.
+
 Overview of Student Helper:
 
 Student Helper is an app that consists of 5 parts: an Agenda, schedule, GPA calculator, Gradebook, and a group communication tool.
